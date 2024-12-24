@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "20125611-915f-45d7-8d60-68e057a36bc7",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "20125611-915f-45d7-8d60-68e057a36bc7@6c48a",
+      "displayName": "TallnutCracked2_2",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "20125611-915f-45d7-8d60-68e057a36bc7",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "20125611-915f-45d7-8d60-68e057a36bc7@f9941",
+      "displayName": "TallnutCracked2_2",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -2,
+        "trimX": 0,
+        "trimY": 4,
+        "width": 81,
+        "height": 115,
+        "rawWidth": 83,
+        "rawHeight": 119,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -40.5,
+            -57.5,
+            0,
+            40.5,
+            -57.5,
+            0,
+            -40.5,
+            57.5,
+            0,
+            40.5,
+            57.5,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            0,
+            115,
+            81,
+            115,
+            0,
+            0,
+            81,
+            0
+          ],
+          "nuv": [
+            0,
+            0,
+            0.9759036144578314,
+            0,
+            0,
+            0.9663865546218487,
+            0.9759036144578314,
+            0.9663865546218487
+          ],
+          "minPos": [
+            -40.5,
+            -57.5,
+            0
+          ],
+          "maxPos": [
+            40.5,
+            57.5,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "20125611-915f-45d7-8d60-68e057a36bc7@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "hasAlpha": true,
+    "fixAlphaTransparencyArtifacts": false,
+    "redirect": "20125611-915f-45d7-8d60-68e057a36bc7@6c48a"
+  }
+}

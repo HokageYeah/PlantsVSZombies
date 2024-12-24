@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "71777927-fea5-4578-bb7f-d133df9b0317",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "71777927-fea5-4578-bb7f-d133df9b0317@6c48a",
+      "displayName": "GloomShroomBullet_1",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "71777927-fea5-4578-bb7f-d133df9b0317",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "71777927-fea5-4578-bb7f-d133df9b0317@f9941",
+      "displayName": "GloomShroomBullet_1",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 1.5,
+        "offsetY": -3.5,
+        "trimX": 46,
+        "trimY": 45,
+        "width": 121,
+        "height": 117,
+        "rawWidth": 210,
+        "rawHeight": 200,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -60.5,
+            -58.5,
+            0,
+            60.5,
+            -58.5,
+            0,
+            -60.5,
+            58.5,
+            0,
+            60.5,
+            58.5,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            46,
+            155,
+            167,
+            155,
+            46,
+            38,
+            167,
+            38
+          ],
+          "nuv": [
+            0.21904761904761905,
+            0.19,
+            0.7952380952380952,
+            0.19,
+            0.21904761904761905,
+            0.775,
+            0.7952380952380952,
+            0.775
+          ],
+          "minPos": [
+            -60.5,
+            -58.5,
+            0
+          ],
+          "maxPos": [
+            60.5,
+            58.5,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "71777927-fea5-4578-bb7f-d133df9b0317@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "hasAlpha": true,
+    "fixAlphaTransparencyArtifacts": false,
+    "redirect": "71777927-fea5-4578-bb7f-d133df9b0317@6c48a"
+  }
+}
