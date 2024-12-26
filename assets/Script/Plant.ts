@@ -1,5 +1,5 @@
-import { _decorator, Component, Enum, Node } from "cc";
-import { PlantType } from "./Card";
+import { _decorator, Animation, Component, Enum, Node } from "cc";
+import { PlantState, PlantType } from "./Global";
 const { ccclass, property } = _decorator;
 
 @ccclass("Plant")
@@ -9,9 +9,11 @@ export class Plant extends Component {
 
   // 植物类型
   @property({ type: Enum(PlantType), tooltip: "植物类型" })
-  private plantType: PlantType;
+  public plantType: PlantType;
 
-  start() {}
+  start() {
+    this.transitionToDisable();
+  }
 
   update(deltaTime: number) {
     switch (this.plantState) {
@@ -27,9 +29,13 @@ export class Plant extends Component {
   disableUpdate() {}
   // 激活状态更新逻辑
   enableUpdate() {}
-}
-
-export enum PlantState {
-  Disable, // 未激活
-  Enable, // 激活
+  // 状态转换
+  transitionToEnable() {
+    this.plantState = PlantState.Enable;
+  }
+  transitionToDisable() {
+    this.plantState = PlantState.Disable;
+    // 停止播放动画
+    this.getComponent(Animation).enabled = false;
+  }
 }

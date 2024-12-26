@@ -1,18 +1,9 @@
 import { _decorator, Component, Enum, Node, Sprite } from "cc";
 import { SumManager } from "./manager/SumManager";
+import { MouseManager } from "./manager/MouseManager";
+import { CardState, PlantType } from "./Global";
 const { ccclass, property } = _decorator;
 
-
-export enum CardState {
-    Cooldown, // 冷却中
-    WaitingSun, // 等待阳光
-    Ready, // 准备就绪
-  }
-  
-  export enum PlantType {
-    SunFlower, // 向日葵
-    PeaShooter, // 豌豆射手
-  }
 
 @ccclass("Card")
 export class Card extends Component {
@@ -104,6 +95,9 @@ export class Card extends Component {
     if(this.needSunPoint > SumManager.Instance.getSunPoint())return;
     console.log("点击了卡牌");
     // 点击后扣除阳光点数，开始种植
+    let isSuccess = MouseManager.Instance.addPlant(this.plantType);
+    if(!isSuccess) return;
+    console.log("点击了卡牌---", isSuccess);
     SumManager.Instance.subSun(this.needSunPoint);
     this.transitionToCooling();
   }

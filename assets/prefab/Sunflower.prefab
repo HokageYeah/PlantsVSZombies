@@ -179,6 +179,7 @@
     "__prefab": {
       "__id__": 9
     },
+    "plantType": 0,
     "_id": ""
   },
   {
@@ -194,6 +195,7 @@
       "__id__": 0
     },
     "fileId": "dfqrRiM8JEhYVtK/tn208V",
+    "instance": null,
     "targetOverrides": null
   }
 ]
