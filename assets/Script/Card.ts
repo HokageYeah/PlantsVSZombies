@@ -1,4 +1,4 @@
-import { _decorator, Component, Enum, Node, Sprite } from "cc";
+import { _decorator, Component, Enum, EventMouse, Node, Sprite } from "cc";
 import { SumManager } from "./manager/SumManager";
 import { MouseManager } from "./manager/MouseManager";
 import { CardState, PlantType } from "./Global";
@@ -91,11 +91,11 @@ export class Card extends Component {
     this.cardMask.node.active = true;
   }
   //   点击事件
-  private onClick() {
+  private onClick(event: EventMouse) {
     if(this.needSunPoint > SumManager.Instance.getSunPoint())return;
     console.log("点击了卡牌");
     // 点击后扣除阳光点数，开始种植
-    let isSuccess = MouseManager.Instance.addPlant(this.plantType);
+    let isSuccess = MouseManager.Instance.addPlant(this.plantType, event);
     if(!isSuccess) return;
     console.log("点击了卡牌---", isSuccess);
     SumManager.Instance.subSun(this.needSunPoint);
