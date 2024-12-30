@@ -1,4 +1,4 @@
-import { _decorator, Animation, Component, Enum, Node } from "cc";
+import { _decorator, animation, Animation, Component, Enum, Node } from "cc";
 import { PlantState, PlantType } from "./Global";
 const { ccclass, property } = _decorator;
 
@@ -32,10 +32,12 @@ export class Plant extends Component {
   // 状态转换
   transitionToEnable() {
     this.plantState = PlantState.Enable;
+    // 播放动画
+    this.getComponent(animation.AnimationController).enabled = true;
   }
   transitionToDisable() {
     this.plantState = PlantState.Disable;
     // 停止播放动画
-    this.getComponent(Animation).enabled = false;
+    this.getComponent(animation.AnimationController).enabled = false;
   }
 }

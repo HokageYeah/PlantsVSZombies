@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "Sunflower",
+    "_name": "Sun",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_native": "",
@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Sunflower",
+    "_name": "Sun",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": null,
@@ -28,18 +28,15 @@
       },
       {
         "__id__": 6
-      },
-      {
-        "__id__": 8
       }
     ],
     "_prefab": {
-      "__id__": 10
+      "__id__": 8
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -303.7136,
-      "y": 89.14319999999998,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -51,8 +48,8 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 1.2,
-      "y": 1.2,
+      "x": 1,
+      "y": 1,
       "z": 1
     },
     "_mobility": 0,
@@ -79,8 +76,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 69,
-      "height": 70
+      "width": 66,
+      "height": 65
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -91,7 +88,7 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "5aamUycLdAirgCyJ99P18j"
+    "fileId": "548pX9YxNNZLp8mrEDKNpz"
   },
   {
     "__type__": "cc.Sprite",
@@ -110,18 +107,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 180,
-      "g": 180,
-      "b": 180,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "4a14e5f6-bcb5-49ec-836d-4a9db0a26374@f9941",
+      "__uuid__": "b10f1df2-d8eb-4ab4-9c20-bb254f6d3078@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 1,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -129,17 +126,17 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": false,
+    "_isTrimmedMode": true,
     "_useGrayscale": false,
     "_atlas": null,
     "_id": ""
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "e8J3aILP9De5xBYW84zCXX"
+    "fileId": "8cnua6d9ZPpIm0NvNRV4xJ"
   },
   {
-    "__type__": "cc.animation.AnimationController",
+    "__type__": "cc.Animation",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -150,43 +147,22 @@
     "__prefab": {
       "__id__": 7
     },
-    "_graph": {
-      "__uuid__": "7e4884c6-0d10-44f1-bb2d-34d13ab952c6",
-      "__expectedType__": "cc.animation.AnimationGraph"
-    },
-    "graph": {
-      "__uuid__": "7e4884c6-0d10-44f1-bb2d-34d13ab952c6",
-      "__expectedType__": "cc.animation.AnimationGraph"
-    },
-    "_id": ""
-  },
-  {
-    "__type__": "cc.CompPrefabInfo",
-    "fileId": "f4452HTT1AIrZT5xuTwhZO"
-  },
-  {
-    "__type__": "b613fmsPi9L37qhvIXcBGFx",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "__prefab": {
-      "__id__": 9
-    },
-    "plantType": 0,
-    "produceDuration": 2,
-    "sunPrefab": {
-      "__uuid__": "7428eba9-c835-4a42-8ba1-15b8e68d9185",
-      "__expectedType__": "cc.Prefab"
+    "playOnLoad": true,
+    "_clips": [
+      {
+        "__uuid__": "fec74af9-6c4b-4358-8122-9a1eea780b9c",
+        "__expectedType__": "cc.AnimationClip"
+      }
+    ],
+    "_defaultClip": {
+      "__uuid__": "fec74af9-6c4b-4358-8122-9a1eea780b9c",
+      "__expectedType__": "cc.AnimationClip"
     },
     "_id": ""
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "77jHc6ogtEx7mR+9V87Mh/"
+    "fileId": "11KO9Csg1O/6vqIlGAKqgW"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -196,8 +172,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "dfqrRiM8JEhYVtK/tn208V",
-    "instance": null,
+    "fileId": "feVnILegBKS7EDA22hEq1I",
     "targetOverrides": null
   }
 ]

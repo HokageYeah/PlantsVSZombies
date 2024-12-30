@@ -1,4 +1,16 @@
-import { __private, _decorator, Component, EventMouse, find, input, Input, instantiate, Node, Prefab, Vec3 } from "cc";
+import {
+  __private,
+  _decorator,
+  Component,
+  EventMouse,
+  find,
+  input,
+  Input,
+  instantiate,
+  Node,
+  Prefab,
+  Vec3,
+} from "cc";
 import { Plant } from "../Plant";
 import { PlantType } from "../Global";
 import { Cell } from "./Cell";
@@ -28,12 +40,15 @@ export class MouseManager extends Component {
     }
     input.on(Input.EventType.MOUSE_MOVE, this.onMouseMove, this);
   }
+  protected onDestroy(): void {
+    input.off(Input.EventType.MOUSE_MOVE, this.onMouseMove, this);
+  }
   onMouseMove(event: EventMouse) {
     this.followCursor(event);
   }
   addPlant(plantType: PlantType, event: EventMouse): boolean {
     console.log("添加植物", plantType);
-    if(this.currentPlant !== null) return false;
+    if (this.currentPlant !== null) return false;
     let plantPrefab = this.getPlantPrefab(plantType);
     if (!plantPrefab) {
       console.error("植物预制体不存在", plantType);
@@ -45,12 +60,12 @@ export class MouseManager extends Component {
     return true;
   }
   getPlantPrefab(plantType: PlantType): Node {
-    for(let plantPrefab of this.plantPrefabArray) {
+    for (let plantPrefab of this.plantPrefabArray) {
       let plabtNode = instantiate(plantPrefab);
-      if(plabtNode.getComponent(Plant).plantType == plantType) {
+      if (plabtNode.getComponent(Plant).plantType == plantType) {
         return plabtNode;
-      }else{
-        // 如果不同，则销毁 
+      } else {
+        // 如果不同，则销毁
         plabtNode.destroy();
       }
     }
@@ -66,10 +81,10 @@ export class MouseManager extends Component {
     if (this.currentPlant) this.currentPlant.setWorldPosition(worldPos);
   }
   onCellCLick(cell: Cell) {
-    if(!this.currentPlant) return;
+    if (!this.currentPlant) return;
     // 设置当前植物对象的位置为点击格子的位置
     let isSuccess = cell.addPlant(this.currentPlant);
-    if(!isSuccess) return;
+    if (!isSuccess) return;
     // 如果植物添加成功 释放当前植物对象
     this.currentPlant = null;
     console.log("点击单元格", cell);
